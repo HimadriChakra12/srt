@@ -1,11 +1,68 @@
 :root{
-    --pico-card-background-color: #282828 !important;
-    --pico-background-color: #1d2021 !important;
-    --pico-table-border-color: #e2d2ab !important;
-    --pico-secondary-background: #282828 !important;
-    --pico-secondary-inverse: #282828 !important;
-    --pico-primary-inverse: #e2d2ab !important;
-    --pico-primary: #282828 !important;
+    /* Gruvbox Dark palette */
+    --gb-bg0-hard: #1d2021;
+    --gb-bg0: #282828;
+    --gb-bg1: #3c3836;
+    --gb-bg2: #504945;
+    --gb-bg3: #665c54;
+    --gb-fg: #ebdbb2;
+    --gb-fg1: #ebdbb2;
+    --gb-fg2: #d5c4a1;
+    --gb-gray: #928374;
+    --gb-red: #fb4934;
+    --gb-green: #b8bb26;
+    --gb-yellow: #fabd2f;
+    --gb-yellow-dim: #d79921;
+    --gb-blue: #83a598;
+    --gb-purple: #d3869b;
+    --gb-aqua: #8ec07c;
+    --gb-orange: #fe8019;
+
+    --pico-background-color: var(--gb-bg0-hard) !important;
+    --pico-card-background-color: var(--gb-bg1) !important;
+    --pico-card-border-color: var(--gb-bg2) !important;
+    --pico-color: var(--gb-fg) !important;
+    --pico-h1-color: var(--gb-fg) !important;
+    --pico-h2-color: var(--gb-fg) !important;
+    --pico-muted-color: var(--gb-gray) !important;
+    --pico-muted-border-color: var(--gb-bg2) !important;
+    --pico-table-border-color: var(--gb-bg2) !important;
+    --pico-table-row-stripped-background-color: var(--gb-bg1) !important;
+
+    --pico-primary: var(--gb-yellow-dim) !important;
+    --pico-primary-background: var(--gb-yellow-dim) !important;
+    --pico-primary-border: var(--gb-yellow-dim) !important;
+    --pico-primary-hover: var(--gb-yellow) !important;
+    --pico-primary-hover-background: var(--gb-yellow) !important;
+    --pico-primary-focus: rgba(250, 189, 47, 0.35) !important;
+    --pico-primary-inverse: var(--gb-bg0-hard) !important;
+
+    --pico-secondary: var(--gb-bg3) !important;
+    --pico-secondary-background: var(--gb-bg2) !important;
+    --pico-secondary-border: var(--gb-bg2) !important;
+    --pico-secondary-hover: var(--gb-bg3) !important;
+    --pico-secondary-hover-background: var(--gb-bg3) !important;
+    --pico-secondary-inverse: var(--gb-fg) !important;
+
+    --pico-contrast: var(--gb-orange) !important;
+    --pico-contrast-background: var(--gb-orange) !important;
+    --pico-contrast-hover: var(--gb-yellow) !important;
+    --pico-contrast-hover-background: var(--gb-yellow) !important;
+    --pico-contrast-inverse: var(--gb-bg0-hard) !important;
+
+    --pico-form-element-background-color: var(--gb-bg1) !important;
+    --pico-form-element-border-color: var(--gb-bg3) !important;
+    --pico-form-element-color: var(--gb-fg) !important;
+    --pico-form-element-placeholder-color: var(--gb-gray) !important;
+    --pico-form-element-focus-color: var(--gb-yellow-dim) !important;
+
+    --pico-code-background-color: var(--gb-bg1) !important;
+    --pico-code-color: var(--gb-fg2) !important;
+}
+
+body{
+    background-color: var(--gb-bg0-hard);
+    color: var(--gb-fg);
 }
 
 @media (min-height: 500px) {
@@ -96,7 +153,11 @@
 }
 
 a{
-    color: var(--pico-secondary-inverse);
+    color: var(--gb-blue);
+}
+
+a:hover{
+    color: var(--gb-aqua);
 }
 
 .toast.show {

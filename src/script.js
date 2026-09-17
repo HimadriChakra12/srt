@@ -60,7 +60,7 @@ function showQR(url, shortcut, event) {
     popup.className = 'qr-popup';
 
     popup.innerHTML = `
-        <div style="font-size:0.7rem;color:#666;margin-bottom:0.4rem;word-break:break-all;max-width:200px">${url}</div>
+        <div style="font-size:0.7rem;color:#928374;margin-bottom:0.4rem;word-break:break-all;max-width:200px">${url}</div>
         <div style="text-align:center"></div>
         <div style="display:flex;gap:0.5rem;margin-top:0.75rem;justify-content:center">
             <button id="qr-copy-btn" class="contrast">Copy</button>
@@ -80,11 +80,11 @@ function showQR(url, shortcut, event) {
     popup.style.cssText = `
     position:fixed;
     z-index:9999;
-    background:#1d2021 !important
-    border:1px solid #e2d2ab;
+    background:#282828 !important;
+    border:1px solid #504945;
     border-radius:8px;
     padding:0.75rem;
-    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    box-shadow:0 4px 12px rgba(0,0,0,0.4);
     top:${top}px;
     left:${rect.left}px`;
     document.body.appendChild(popup);

@@ -25,7 +25,7 @@ const CONFIG = {
 
   // Pico CSS accent colour — options: red, pink, fuchsia, purple, violet,
   // indigo, blue, azure, cyan, jade, green, lime, yellow, amber, orange, sand, grey, zinc, slate
-  accentColor: "violet",
+  accentColor: "yellow",
 
   // Analytics — GoatCounter site name (e.g. "jinx" for jinx.goatcounter.com)
   // Set to null to disable
