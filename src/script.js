@@ -77,7 +77,16 @@ function showQR(url, shortcut, event) {
     const top = spaceBelow > popupHeight
         ? rect.bottom + 6
         : rect.top - popupHeight - 6;
-    popup.style.cssText = `position:fixed;z-index:9999;background:var(--pico-card-background-color,white);border:1px solid var(--pico-card-border-color,#ccc);border-radius:8px;padding:0.75rem;box-shadow:0 4px 12px rgba(0,0,0,0.15);top:${top}px;left:${rect.left}px`;
+    popup.style.cssText = `
+    position:fixed;
+    z-index:9999;
+    background:#1d2021 !important
+    border:1px solid #e2d2ab;
+    border-radius:8px;
+    padding:0.75rem;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    top:${top}px;
+    left:${rect.left}px`;
     document.body.appendChild(popup);
     // Clamp horizontally so popup stays within viewport
     const popupRect = popup.getBoundingClientRect();
