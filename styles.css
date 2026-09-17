@@ -95,6 +95,10 @@
     z-index: 1000;
 }
 
+a{
+    color: var(--pico-secondary-inverse);
+}
+
 .toast.show {
     transform: translateX(0);
 }
